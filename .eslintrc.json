@@ -1,0 +1,41 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "airbnb-typescript/base",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "project": "tsconfig.eslint.json",
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "no-useless-constructor": 0,
+    "import/no-unresolved": 0,
+    "max-len": ["error", 120],
+    "no-empty-function": [
+      "error",
+      {
+        "allow": ["constructors"]
+      }
+    ],
+    "@typescript-eslint/indent": 0,
+    "import/prefer-default-export": 0,
+    "indent": ["error", 2],
+    "max-classes-per-file": 0,
+    "class-methods-use-this": 0,
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "import/no-extraneous-dependencies": "off"
+  }
+}
